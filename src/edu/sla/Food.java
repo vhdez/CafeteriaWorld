@@ -1,12 +1,14 @@
 package edu.sla;
 
 public class Food {
+
     // fields
     String name;
     int servingSize;
     int servingsLeft;
     String foodGroup;
     Student owner;
+    private Object ketchup;
 
     // methods
     void describe() {
@@ -15,7 +17,10 @@ public class Food {
 
     void addTopping() {
 
+
     }
+
+
 
     void serveTo(Student student) {
         servingsLeft = servingsLeft -1;

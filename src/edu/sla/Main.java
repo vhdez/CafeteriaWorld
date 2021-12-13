@@ -14,6 +14,14 @@ public class Main {
         hotDog1.servingSize = 1;
         hotDog1.describe();
 
+        Food general_tso_chicken = new Food();
+        general_tso_chicken.name = "general_tso_chicken";
+        general_tso_chicken.foodGroup = "protein";
+        general_tso_chicken.servingsLeft = 350;
+        general_tso_chicken.servingSize = 7;
+        general_tso_chicken.describe();
+
+
         Food cheeseburger = new Food();
         cheeseburger.name = "Cheeseburger";
         cheeseburger.foodGroup = "protein";

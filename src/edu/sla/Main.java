@@ -41,7 +41,7 @@ public class Main {
 
         System.out.println("These students are in the cafeteria:");
         Student mrHernandez = new Student();
-        mrHernandez.name = "Mr. Hernandez";
+        mrHernandez.name = "Mr. Hernandez ";
         mrHernandez.eatenYet = false;
         mrHernandez.gotFoodYet = false;
         mrHernandez.theirOrder = null;

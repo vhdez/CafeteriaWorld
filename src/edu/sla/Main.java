@@ -14,13 +14,6 @@ public class Main {
         hotDog1.servingSize = 1;
         hotDog1.describe();
 
-        Food general_tso_chicken = new Food();
-        general_tso_chicken.name = "general_tso_chicken";
-        general_tso_chicken.foodGroup = "protein";
-        general_tso_chicken.servingsLeft = 350;
-        general_tso_chicken.servingSize = 7;
-        general_tso_chicken.describe();
-
 
         Food cheeseburger = new Food();
         cheeseburger.name = "Cheeseburger";
@@ -41,6 +34,13 @@ public class Main {
         pbjSandwich.servingsLeft = 45;
         pbjSandwich.describe();
 
+        Food general_tso_chicken = new Food();
+        general_tso_chicken.name = "general_tso_chicken";
+        general_tso_chicken.foodGroup = "protein";
+        general_tso_chicken.servingsLeft = 350;
+        general_tso_chicken.servingSize = 7;
+        general_tso_chicken.describe();
+
         System.out.println("These students are in the cafeteria:");
         Student mrHernandez = new Student();
         mrHernandez.name = "Mr. Hernandez";
@@ -55,6 +55,13 @@ public class Main {
         sean.gotFoodYet = false;
         sean.theirOrder = null;
         sean.describe();
+
+        Student Terrence = new Student();
+        Terrence.name = "Terrence Blocker";
+        Terrence.eatenYet = false;
+        Terrence.gotFoodYet = false;
+        Terrence.theirOrder = null;
+        Terrence.describe();
 
         System.out.println("Students get to pick some foods");
         mrHernandez.order(pbjSandwich);

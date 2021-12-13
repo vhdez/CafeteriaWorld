@@ -13,6 +13,7 @@ public class Food {
     // methods
     void describe() {
         System.out.println("There are " + servingsLeft + " amount of " + name + "s left in the cafeteria.");
+
     }
 
     void addTopping() {

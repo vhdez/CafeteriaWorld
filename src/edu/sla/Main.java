@@ -14,12 +14,19 @@ public class Main {
         hotDog1.servingSize = 1;
         hotDog1.describe();
 
-//        Food hotDog2 = new Food();
-//        hotDog2.name = "second hot dog";
-//        hotDog2.foodGroup = "protein";
-//        hotDog2.servingsLeft = 20;
-//        hotDog2.servingSize = 1;
-//        hotDog2.describe();
+        Food cheeseburger = new Food();
+        cheeseburger.name = "Cheeseburger";
+        cheeseburger.foodGroup = "protein";
+        cheeseburger.servingsLeft = 20;
+        cheeseburger.servingSize = 1;
+        cheeseburger.describe();
+
+        Food strawberrymilk = new Food();
+        strawberrymilk.name = "Strawberry Milk";
+        strawberrymilk.foodGroup = "drink";
+        strawberrymilk.servingsLeft = 20;
+        strawberrymilk.servingSize = 1;
+        strawberrymilk.describe();
 
         Food pbjSandwich = new Food();
         pbjSandwich.name = "PBJ Sandwich";
@@ -34,9 +41,20 @@ public class Main {
         mrHernandez.theirOrder = null;
         mrHernandez.describe();
 
+        Student sean = new Student();
+        sean.name = "Sean Hogan";
+        sean.eatenYet = false;
+        sean.gotFoodYet = false;
+        sean.theirOrder = null;
+        sean.describe();
+
         System.out.println("Students get to pick some foods");
         mrHernandez.order(pbjSandwich);
         mrHernandez.describe();
+
+        sean.order(cheeseburger);
+        sean.order(strawberrymilk);
+        sean.describe();
 
         System.out.println("Students get to eat the food on their tray");
         System.out.println("Students get to report their satisfaction");

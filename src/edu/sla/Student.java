@@ -11,17 +11,15 @@ public class Student {
     void describe() {
         System.out.print("Hi! It's " + name + "!");
         if (gotFoodYet) {
-            System.out.println("I can't wait to eat my:" + theirOrder);
+            System.out.println("I can't wait to eat my:" + theirOrder.name);
         } else {
             System.out.println("I need to go get food.");
         }
     }
     void order(Food food) {
-        food.serve();
+        food.serveTo(this);
         theirOrder = food;
         gotFoodYet = true;
-        System.out.print(name + " ordered:");
-        theirOrder.describe();
     }
     void eat() {
 

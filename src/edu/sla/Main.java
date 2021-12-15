@@ -66,6 +66,14 @@ public class Main {
         toast.servingSize = 1;
         toast.describe();
 
+        Food Pizza = new Food();
+        Pizza.name = "Pizza";
+        Pizza.foodGroup = "protein";
+        Pizza.servingsLeft = 15;
+        Pizza.servingSize = 1;
+        Pizza.describe();
+
+
         System.out.println("These students are in the cafeteria:");
         Student tashon = new Student();
         tashon.name = "Tashon";
@@ -109,6 +117,13 @@ public class Main {
         Terrence.theirOrder = null;
         Terrence.describe();
 
+        Student Michael = new Student();
+        Michael.name = "Michael Rojas";
+        Michael.eatenYet = false;
+        Michael.gotFoodYet = false;
+        Michael.theirOrder = null;
+        Michael.describe();
+
 
         System.out.println("Students get to pick some foods");
         mrHernandez.order(pbjSandwich);
@@ -128,6 +143,9 @@ public class Main {
 
         Miles.order(Pudding);
         Miles.describe();
+
+        Michael.order(Pizza);
+        Michael.describe();
 
         System.out.println("Students get to eat the food on their tray");
         System.out.println("Students get to report their satisfaction");

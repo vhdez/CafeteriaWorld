@@ -6,6 +6,12 @@ public class Main {
         System.out.println("Here is my world of Cafeteria food!");
         System.out.println("Display all the food available for students");
         // tell all the foods to describe themselves
+        Food icecream = new Food();
+        icecream.name = ("Ice Cream");
+        icecream.foodGroup = "dairy";
+        icecream.servingsLeft = 5;
+        icecream.servingSize = 1;
+        icecream.describe();
 
         Food hotDog1 = new Food();
         hotDog1.name = "hot dog";
@@ -48,13 +54,34 @@ public class Main {
         pbjSandwich.servingsLeft = 45;
         pbjSandwich.describe();
 
+        Food toast = new Food();
+        toast.name = "Toast";
+        toast.servingsLeft = 25;
+        toast.servingSize = 1;
+        toast.describe();
+
         System.out.println("These students are in the cafeteria:");
+        Student tashon = new Student();
+        tashon.name = "Tashon";
+        tashon.eatenYet = false;
+        tashon.gotFoodYet = false;
+        tashon.theirOrder = null;
+        tashon.describe();
+
         Student mrHernandez = new Student();
         mrHernandez.name = "Mr. Hernandez";
         mrHernandez.eatenYet = false;
         mrHernandez.gotFoodYet = false;
         mrHernandez.theirOrder = null;
         mrHernandez.describe();
+
+        Student eric = new Student();
+        eric.name = "Eric Casalena";
+        eric.eatenYet = false;
+        eric.gotFoodYet = false;
+        eric.theirOrder = null;
+        eric.describe();
+
 
         Student sean = new Student();
         sean.name = "Sean Hogan";
@@ -74,6 +101,15 @@ public class Main {
         System.out.println("Students get to pick some foods");
         mrHernandez.order(pbjSandwich);
         mrHernandez.describe();
+        tashon.order(icecream);
+        tashon.describe();
+
+        sean.order(cheeseburger);
+        sean.order(strawberrymilk);
+        sean.describe();
+
+        eric.order(toast);
+        eric.describe();
 
         Terrence.order(general_tso_chicken);
         Terrence.describe();

@@ -35,6 +35,14 @@ public class Main {
         strawberrymilk.servingSize = 1;
         strawberrymilk.describe();
 
+        Food water = new Food();
+        water.name = "Water or Wader";
+        water.foodGroup = "drink";
+        water.servingsLeft = 20;
+        water.servingSize = 1;
+        water.describe();
+
+
         Food pbjSandwich = new Food();
         pbjSandwich.name = "PBJ Sandwich";
         pbjSandwich.servingsLeft = 45;
@@ -67,8 +75,8 @@ public class Main {
         mrHernandez.order(pbjSandwich);
         mrHernandez.describe();
 
-        Terrence.order(cheeseburger);
-        Terrence.order(strawberrymilk);
+        Terrence.order(general_tso_chicken);
+        Terrence.order(water);
         Terrence.describe();
 
         System.out.println("Students get to eat the food on their tray");

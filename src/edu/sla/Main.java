@@ -48,6 +48,12 @@ public class Main {
         water.servingSize = 1;
         water.describe();
 
+        Food Pudding = new Food();
+        Pudding.name = "Pudding";
+        Pudding.foodGroup = "Dairy";
+        Pudding.servingsLeft = 100;
+        Pudding.servingSize = 1;
+        Pudding.describe();
 
         Food pbjSandwich = new Food();
         pbjSandwich.name = "PBJ Sandwich";
@@ -82,6 +88,12 @@ public class Main {
         eric.theirOrder = null;
         eric.describe();
 
+        Student Miles = new Student();
+        Miles.name = "Miles";
+        Miles.eatenYet = false;
+        Miles.gotFoodYet = false;
+        Miles.theirOrder = null;
+        Miles.describe();
 
         Student sean = new Student();
         sean.name = "Sean Hogan";
@@ -113,6 +125,9 @@ public class Main {
 
         Terrence.order(general_tso_chicken);
         Terrence.describe();
+
+        Miles.order(Pudding);
+        Miles.describe();
 
         System.out.println("Students get to eat the food on their tray");
         System.out.println("Students get to report their satisfaction");

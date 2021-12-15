@@ -14,6 +14,13 @@ public class Main {
         hotDog1.servingSize = 1;
         hotDog1.describe();
 
+        Food general_tso_chicken = new Food();
+        general_tso_chicken.name = "hot dog";
+        general_tso_chicken.foodGroup = "protein";
+        general_tso_chicken.servingsLeft = 20;
+        general_tso_chicken.servingSize = 1;
+        general_tso_chicken.describe();
+
         Food cheeseburger = new Food();
         cheeseburger.name = "Cheeseburger";
         cheeseburger.foodGroup = "protein";
@@ -48,13 +55,21 @@ public class Main {
         sean.theirOrder = null;
         sean.describe();
 
+        Student Terrence = new Student();
+        Terrence.name = "Terrence Blocker";
+        Terrence.eatenYet = false;
+        Terrence.gotFoodYet = false;
+        Terrence.theirOrder = null;
+        Terrence.describe();
+
+
         System.out.println("Students get to pick some foods");
         mrHernandez.order(pbjSandwich);
         mrHernandez.describe();
 
-        sean.order(cheeseburger);
-        sean.order(strawberrymilk);
-        sean.describe();
+        Terrence.order(cheeseburger);
+        Terrence.order(strawberrymilk);
+        Terrence.describe();
 
         System.out.println("Students get to eat the food on their tray");
         System.out.println("Students get to report their satisfaction");

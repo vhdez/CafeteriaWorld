@@ -15,7 +15,7 @@ public class Main {
         hotDog1.describe();
 
         Food general_tso_chicken = new Food();
-        general_tso_chicken.name = "hot dog";
+        general_tso_chicken.name = "general_tso_chicken";
         general_tso_chicken.foodGroup = "protein";
         general_tso_chicken.servingsLeft = 350;
         general_tso_chicken.servingSize = 7;

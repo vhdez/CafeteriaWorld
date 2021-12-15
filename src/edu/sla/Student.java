@@ -9,7 +9,7 @@ public class Student {
 
     // Methods
     void describe() {
-        System.out.print("Hi! It's " + name + "!");
+        System.out.print("Hi! It's " + name + "! ");
         if (gotFoodYet) {
             System.out.println("I can't wait to eat my: " + theirOrder.name);
         } else {

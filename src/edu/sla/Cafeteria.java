@@ -83,7 +83,7 @@ public class Cafeteria {
         tashon.describe();
 
         Student mrHernandez = new Student();
-        mrHernandez.name = "Mr. Hernandez";
+        mrHernandez.name = "Mr. H";
         mrHernandez.eatenYet = false;
         mrHernandez.gotFoodYet = false;
         mrHernandez.theirOrder = null;

@@ -13,6 +13,13 @@ public class Cafeteria {
         icecream.servingSize = 1;
         icecream.describe();
 
+        Food fishandchips = new Food();
+        fishandchips.name = "Fish and Chips";
+        fishandchips.foodGroup = "Protein";
+        fishandchips.servingsLeft = 10;
+        fishandchips.servingSize = 1;
+        fishandchips.describe();
+
         Food hotDog1 = new Food();
         hotDog1.name = "hot dog";
         hotDog1.foodGroup = "protein";
@@ -124,7 +131,7 @@ public class Cafeteria {
         Michael.describe();
 
         System.out.println("Students get to pick some foods");
-        sean.order(cheeseburger);
+        sean.order(fishandchips);
         sean.order(strawberrymilk);
         sean.describe();
 
@@ -156,5 +163,8 @@ public class Cafeteria {
         mrHernandez.describe();
         System.out.println("Hot Dogs can be served " + hotDog1.servingsLeft + " more times.");
         Michael.order(hotDog2);
+        sean.eat();
+        System.out.println ("Fish and Chips can be served " + fishandchips.servingsLeft + " more times.");
+        sean.describe();
     }
 }

@@ -1,6 +1,6 @@
 package edu.sla;
 
-public class Main {
+public class Cafeteria {
 
     public static void main(String[] args) {
         System.out.println("Here is my world of Cafeteria food!");
@@ -9,7 +9,7 @@ public class Main {
         Food icecream = new Food();
         icecream.name = ("Ice Cream");
         icecream.foodGroup = "dairy";
-        icecream.servingsLeft = 5;
+        icecream.servingsLeft = 1;
         icecream.servingSize = 1;
         icecream.describe();
 
@@ -124,13 +124,13 @@ public class Main {
         Michael.theirOrder = null;
         Michael.describe();
 
-
         System.out.println("Students get to pick some foods");
         mrHernandez.order(pbjSandwich);
-        mrHernandez.describe();
         tashon.order(icecream);
         tashon.describe();
-
+        mrHernandez.order(icecream);
+        mrHernandez.describe();
+        icecream.describe();
         sean.order(cheeseburger);
         sean.order(strawberrymilk);
         sean.describe();

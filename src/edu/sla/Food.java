@@ -7,25 +7,18 @@ public class Food {
     int servingSize;
     int servingsLeft;
     String foodGroup;
-    Student owner;
-    private Object ketchup;
 
     // methods
     void describe() {
         System.out.println("There are " + servingsLeft + " amount of " + name + "s left in the cafeteria.");
-
     }
 
     void addTopping() {
 
-
     }
 
-
-
-    void serveTo(Student student) {
+    void serve() {
         servingsLeft = servingsLeft -1;
-        owner = student;
     }
 
     void eaten() {

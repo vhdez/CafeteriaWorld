@@ -17,7 +17,7 @@ public class Student {
         }
     }
     void order(Food food) {
-        food.serveTo(this);
+        food.serve();
         theirOrder = food;
         gotFoodYet = true;
     }

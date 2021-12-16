@@ -16,9 +16,16 @@ public class Cafeteria {
         Food hotDog1 = new Food();
         hotDog1.name = "hot dog";
         hotDog1.foodGroup = "protein";
-        hotDog1.servingsLeft = 20;
+        hotDog1.servingsLeft = 2;
         hotDog1.servingSize = 1;
         hotDog1.describe();
+
+        Food hotDog2 = new Food();
+        hotDog2.name = "hot dog";
+        hotDog2.foodGroup = "protein";
+        hotDog2.servingsLeft = 2;
+        hotDog2.servingSize = 1;
+        hotDog2.describe();
 
         Food general_tso_chicken = new Food();
         general_tso_chicken.name = "general tso chicken";
@@ -73,64 +80,43 @@ public class Cafeteria {
         Pizza.servingSize = 1;
         Pizza.describe();
 
-
         System.out.println("These students are in the cafeteria:");
         Student tashon = new Student();
         tashon.name = "Tashon";
-        tashon.eatenYet = false;
-        tashon.gotFoodYet = false;
         tashon.theirOrder = null;
         tashon.describe();
 
         Student mrHernandez = new Student();
         mrHernandez.name = "Mr. H";
-        mrHernandez.eatenYet = false;
-        mrHernandez.gotFoodYet = false;
         mrHernandez.theirOrder = null;
         mrHernandez.describe();
 
         Student eric = new Student();
         eric.name = "Eric Casalena";
-        eric.eatenYet = false;
-        eric.gotFoodYet = false;
         eric.theirOrder = null;
         eric.describe();
 
         Student Miles = new Student();
         Miles.name = "Miles";
-        Miles.eatenYet = false;
-        Miles.gotFoodYet = false;
         Miles.theirOrder = null;
         Miles.describe();
 
         Student sean = new Student();
         sean.name = "Sean Hogan";
-        sean.eatenYet = false;
-        sean.gotFoodYet = false;
         sean.theirOrder = null;
         sean.describe();
 
         Student Terrence = new Student();
         Terrence.name = "Terrence Blocker";
-        Terrence.eatenYet = false;
-        Terrence.gotFoodYet = false;
         Terrence.theirOrder = null;
         Terrence.describe();
 
         Student Michael = new Student();
         Michael.name = "Michael Rojas";
-        Michael.eatenYet = false;
-        Michael.gotFoodYet = false;
         Michael.theirOrder = null;
         Michael.describe();
 
         System.out.println("Students get to pick some foods");
-        mrHernandez.order(pbjSandwich);
-        tashon.order(icecream);
-        tashon.describe();
-        mrHernandez.order(icecream);
-        mrHernandez.describe();
-        icecream.describe();
         sean.order(cheeseburger);
         sean.order(strawberrymilk);
         sean.describe();
@@ -144,10 +130,24 @@ public class Cafeteria {
         Miles.order(Pudding);
         Miles.describe();
 
-        Michael.order(Pizza);
+        //Michael.order(Pizza);
         Michael.describe();
 
+        System.out.println("Hot Dogs can be served " + hotDog1.servingsLeft + " more times.");
+        tashon.order(hotDog1);
+        System.out.println("Hot Dogs can be served " + hotDog1.servingsLeft + " more times.");
+        tashon.describe();
+        System.out.println("Hot Dogs can be served " + hotDog2.servingsLeft + " more times.");
+        mrHernandez.order(hotDog2);
+        System.out.println("Hot Dogs can be served " + hotDog2.servingsLeft + " more times.");
+        mrHernandez.describe();
         System.out.println("Students get to eat the food on their tray");
+        tashon.eat();
+        mrHernandez.eat();
         System.out.println("Students get to report their satisfaction");
+        tashon.describe();
+        mrHernandez.describe();
+        System.out.println("Hot Dogs can be served " + hotDog1.servingsLeft + " more times.");
+        Michael.order(hotDog2);
     }
 }

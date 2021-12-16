@@ -17,11 +17,16 @@ public class Food {
 
     }
 
-    void serve() {
-        servingsLeft = servingsLeft -1;
+    boolean serve() {
+        if (servingsLeft > 0) {
+            servingsLeft = servingsLeft - 1;
+            return true;
+        } else {
+            return false;
+        }
     }
 
     void eaten() {
-
+        servingSize = servingSize - 1;
     }
 }

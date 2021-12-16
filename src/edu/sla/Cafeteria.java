@@ -20,6 +20,13 @@ public class Cafeteria {
         hotDog1.servingSize = 1;
         hotDog1.describe();
 
+        Food spagetti = new Food();
+        spagetti.name = "Spagetti";
+        spagetti.foodGroup = "Grains";
+        spagetti.servingsLeft = 20;
+        spagetti.servingSize = 1;
+        spagetti.describe();
+
         Food hotDog2 = new Food();
         hotDog2.name = "hot dog";
         hotDog2.foodGroup = "protein";

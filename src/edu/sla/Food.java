@@ -5,7 +5,7 @@ public class Food {
     // fields
     String name;
     int servingSize;
-    int servingsLeft;
+    static int servingsLeft;
     String foodGroup;
 
     // methods

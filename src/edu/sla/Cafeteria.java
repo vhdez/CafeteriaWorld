@@ -90,44 +90,44 @@ public class Cafeteria {
         Food Pizza = new Food();
         Pizza.name = "Pizza";
         Pizza.foodGroup = "protein";
-        Pizza.servingsLeft = 15;
+        Pizza.servingsLeft = 1;
         Pizza.servingSize = 1;
         Pizza.describe();
 
         System.out.println("These students are in the cafeteria:");
         Student tashon = new Student();
         tashon.name = "Tashon";
-        tashon.theirOrder = null;
+        tashon.myOrder = null;
         tashon.describe();
 
         Student mrHernandez = new Student();
         mrHernandez.name = "Mr. H";
-        mrHernandez.theirOrder = null;
+        mrHernandez.myOrder = null;
         mrHernandez.describe();
 
         Student eric = new Student();
         eric.name = "Eric Casalena";
-        eric.theirOrder = null;
+        eric.myOrder = null;
         eric.describe();
 
         Student Miles = new Student();
         Miles.name = "Miles";
-        Miles.theirOrder = null;
+        Miles.myOrder = null;
         Miles.describe();
 
         Student sean = new Student();
         sean.name = "Sean Hogan";
-        sean.theirOrder = null;
+        sean.myOrder = null;
         sean.describe();
 
         Student Terrence = new Student();
         Terrence.name = "Terrence Blocker";
-        Terrence.theirOrder = null;
+        Terrence.myOrder = null;
         Terrence.describe();
 
         Student Michael = new Student();
         Michael.name = "Michael Rojas";
-        Michael.theirOrder = null;
+        Michael.myOrder = null;
         Michael.describe();
 
         System.out.println("Students get to pick some foods");
@@ -161,10 +161,7 @@ public class Cafeteria {
         System.out.println("Students get to report their satisfaction");
         tashon.describe();
         mrHernandez.describe();
-        System.out.println("Hot Dogs can be served " + hotDog1.servingsLeft + " more times.");
-        Michael.order(hotDog2);
-        sean.eat();
-        System.out.println ("Fish and Chips can be served " + fishandchips.servingsLeft + " more times.");
-        sean.describe();
+//        System.out.println("Hot Dogs can be served " + hotDog1.servingsLeft + " more times.");
+//        Michael.order(hotDog2);
     }
 }

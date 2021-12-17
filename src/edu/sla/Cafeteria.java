@@ -161,7 +161,7 @@ public class Cafeteria {
         System.out.println("Students get to report their satisfaction");
         tashon.describe();
         mrHernandez.describe();
-//        System.out.println("Hot Dogs can be served " + hotDog1.servingsLeft + " more times.");
-//        Michael.order(hotDog2);
+        System.out.println("Hot Dogs can be served " + hotDog1.servingsLeft + " more times.");
+        Michael.order(hotDog2);
     }
 }

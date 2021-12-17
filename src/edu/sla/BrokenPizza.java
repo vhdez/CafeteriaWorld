@@ -4,7 +4,7 @@ public class BrokenPizza {
 
     public static void main(String[] args) {
         Food pizza1 = new Food();
-        pizza1.name = "Pizza";
+        pizza1.name = "Pizza Slice 1";
         pizza1.foodGroup = "protein";
         pizza1.servingsLeft = 20;
         pizza1.servingSize = 2;

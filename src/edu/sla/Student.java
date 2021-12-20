@@ -22,10 +22,13 @@ public class Student {
             return;
         }
 
-        boolean success = food.serve();
+        boolean success = food.serve(this);
         if (success) {
             System.out.println(name + " ordered a " + food.name);
             myOrder = food;
+        } else {
+            System.out.println("Sorry " + name + ". That " + food.name + " was already ordered by " + food.nameGotThis);
+
         }
     }
     void eat() {

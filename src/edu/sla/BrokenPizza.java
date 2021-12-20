@@ -23,10 +23,8 @@ public class BrokenPizza {
 
         mrHernandez.order(pizza1);
         tashon.order(pizza1);
-        System.out.println("HUH??? Why did Tashon get to order my pizza?");
         mrHernandez.eat();
         tashon.eat();
-        System.out.println("HUH??? Why did Tashon get to eat my pizza?");
 
     }
 }

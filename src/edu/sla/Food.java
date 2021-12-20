@@ -4,9 +4,11 @@ public class Food {
 
     // fields
     String name;
+    String nameGotThis;
     int servingSize;
     static int servingsLeft;
     String foodGroup;
+    boolean orderedYet = false;
 
     // methods
     void describe() {
@@ -17,9 +19,10 @@ public class Food {
 
     }
 
-    boolean serve() {
-        if (servingsLeft > 0) {
-            servingsLeft = servingsLeft - 1;
+    boolean serve(Student student) {
+        if (!(orderedYet)) {
+            orderedYet = true;
+            nameGotThis = student.name;
             return true;
         } else {
             return false;

@@ -4,25 +4,23 @@ public class Food {
 
     // fields
     String name;
-    String nameGotThis;
+    Student studentGotThis;
     int servingSize;
-    static int servingsLeft;
-    String foodGroup;
-    boolean orderedYet = false;
+    private static int totalServings;
+
+    // constructor
+    Food() {
+        totalServings = totalServings + 1;
+    }
 
     // methods
     void describe() {
-        System.out.println("There are " + servingsLeft + " amount of " + name + "s left in the cafeteria.");
-    }
-
-    void addTopping() {
-
+        System.out.println("Item # "+ totalServings + " in cafeteria is: " + name);
     }
 
     boolean serve(Student student) {
-        if (!(orderedYet)) {
-            orderedYet = true;
-            nameGotThis = student.name;
+        if (studentGotThis == null) {
+            studentGotThis = student;
             return true;
         } else {
             return false;

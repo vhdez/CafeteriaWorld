@@ -27,7 +27,7 @@ public class Student {
             System.out.println(name + " ordered a " + food.name);
             myOrder = food;
         } else {
-            System.out.println("Sorry " + name + ". That " + food.name + " was already ordered by " + food.nameGotThis);
+            System.out.println("Sorry " + name + ". That " + food.name + " was already ordered by " + food.studentGotThis.name);
 
         }
     }

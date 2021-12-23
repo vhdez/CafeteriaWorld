@@ -11,7 +11,7 @@ public class Cafeteria {
         icecream.servingSize = 1;
         icecream.describe();
 
-        Food fishandchips = new Food();
+        Food fishandchips = new FishandChips();
         fishandchips.name = "Fish and Chips";
         fishandchips.servingSize = 1;
         fishandchips.describe();

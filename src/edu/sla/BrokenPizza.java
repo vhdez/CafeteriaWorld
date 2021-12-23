@@ -23,6 +23,11 @@ public class BrokenPizza {
         icecream.servingSize = 1;
         icecream.describe();
 
+        Food fishandchips = new FishandChips();
+        fishandchips.name = "Fish and Chips";
+        fishandchips.servingSize = 1;
+        fishandchips.describe();
+
         pizza3.describe();
 
         System.out.println("These students are in the cafeteria:");
@@ -36,9 +41,16 @@ public class BrokenPizza {
         mrHernandez.myOrder = null;
         mrHernandez.describe();
 
+        Student Sean = new Student();
+        Sean.name = "Sean";
+        Sean.myOrder = null;
+        Sean.describe();
+
+        Sean.order(fishandchips);
         mrHernandez.order(pizza1);
         tashon.order(pizza2);
         mrHernandez.eat();
+        Sean.eat();
         tashon.eat();
 
     }
